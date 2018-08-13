@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+.container, .element {
+    text-align: center;
+    margin: 5em 0 1em;
+
+}
+
+.button {
+    padding: 0.5em 3em;
+    margin: 0 0.7em 0;
+    font-size: 16px;
+    font-weight: bold;
+    border: 5px solid #ffeb3b;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.plant, .message {
+    text-align: center;
+    /* margin-bottom: 11em; */
+}
+
+.message {
+    font-family: 'Fredoka One', cursive;
+}
+
+h1 {
+    padding: 0.3em;
+    font-size: 25px;
+}
+
+.warning {
+    color: red;
+}
+
+.plant-fell {
+    transform: rotate(90deg);
+}
