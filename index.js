@@ -38,6 +38,8 @@ function waterBtnClick() {
 function loveBtnClick() {
     $('.loveBtn').click(event => {
         event.preventDefault();
+        sunCount = 0;
+        waterCount = 0;
         console.log('loveBtn clicked');
         $('.plant').removeClass('plant-fell');
         $('.element').html(`<img src="heart.png" alt="heart image">`);
