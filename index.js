@@ -35,7 +35,7 @@ function waterBtnClick() {
         console.log(`water count is ${waterCount}`);
         $('.element').html(`<img src="rain.png" alt="raindrop image">`);
         $('.waterBtn').html(`Water<span> x${waterCount}</span>`);
-        if (waterCount > 2) {
+        if (waterCount > 3) {
             $('.message').html(`<h1 class="warning">Uh-oh,<br>that's too much water!</h1>`);
             // $('.plant').addClass('plantFell');
         } else {
@@ -50,7 +50,14 @@ function waterBtnClick() {
 function loveBtnClick() {
     $('.loveBtn').click(event => {
         event.preventDefault();
-
+        if (sunCount > 3) {
+            sunCount -= 1;
+            $('.sunBtn').html(`Sun<span> x${sunCount}</span>`);
+        }
+        if (waterCount > 3) {
+            waterCount -= 1;
+            $('.waterBtn').html(`Water<span> x${waterCount}</span>`);
+        }
         console.log('loveBtn clicked');
         // $('.plant').removeClass('plantFell');
         $('.element').html(`<img src="heart.png" alt="heart image">`);
