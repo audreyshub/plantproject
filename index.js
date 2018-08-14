@@ -8,10 +8,13 @@ function sunBtnClick() {
         sunCount += 1;
         console.log(`sun count is ${sunCount}`);
         $('.element').html(`<img src="sun.png" alt="sun image">`);
+
         if (sunCount > 2) {
             $('.message').html(`<h1 class="warning">Uh-oh,<br>I've dried out!</h1>`);
             $('.plant').addClass('plant-fell');
         } else {
+            $('.element').fadeOut(1000);
+            $('.element').fadeIn(1000);
             $('.plant').removeClass('plant-fell');
             $('.message').html(`<h1>Ah, thank you!</h1>`);
         }
@@ -25,10 +28,13 @@ function waterBtnClick() {
         waterCount += 1;
         console.log(`water count is ${waterCount}`);
         $('.element').html(`<img src="rain.png" alt="raindrop image">`);
+
         if (waterCount > 2) {
             $('.message').html(`<h1 class="warning">Uh-oh,<br>that's too much water!</h1>`);
             $('.plant').addClass('plant-fell');
         } else {
+            $('.element').fadeOut(1000);
+            $('.element').fadeIn(1000);
             $('.plant').removeClass('plant-fell');
             $('.message').html(`<h1>Ah, thank you!</h1>`);
         }
@@ -43,6 +49,8 @@ function loveBtnClick() {
         console.log('loveBtn clicked');
         $('.plant').removeClass('plant-fell');
         $('.element').html(`<img src="heart.png" alt="heart image">`);
+        $('.element').fadeOut(1000);
+        $('.element').fadeIn(1000);
         $('.message').html(`<h1>Ah, thank you<br>for sending love!</h1>`);
     })
 };
