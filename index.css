@@ -32,10 +32,10 @@ h1 {
     font-size: 25px;
 }
 
-.warning {
+.warning, span {
     color: red;
 }
 
-.plant-fell {
-    transform: rotate(90deg);
+.plantFell {
+    /* transform: rotate(90deg); */
 }
