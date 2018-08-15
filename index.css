@@ -32,9 +32,13 @@ h1 {
     font-size: 25px;
 }
 
-.warning, span {
+.warning {
     color: red;
     animation: shake 0.5s;
+}
+
+span {
+    color: red;
 }
 
 @keyframes shake {

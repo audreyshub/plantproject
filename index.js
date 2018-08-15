@@ -10,7 +10,7 @@ function sunBtnClick() {
         }
         sunCount += 1;
         console.log(`sun count is ${sunCount}`);
-        $('.element').html(`<img src="sun.png" alt="sun image">`);
+        $('.element').html(`<img src="sunny.png" alt="sun image">`);
         $('.sunBtn').html(`Sun<span> x${sunCount}</span>`);
         if (sunCount > 3) {
             $('.message').html(`<h1 class="warning">Uh-oh,<br>I've dried out!</h1>`);
